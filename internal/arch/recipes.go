@@ -34,7 +34,7 @@ import (
 // TagSets is every tag set the build recipes compile under, by name.
 //
 //	untagged       no tags at all: plain code, and the only set that is not built
-//	build          what `make build` computes from CONFIG_FILE, which is the image
+//	build          what `make build` computes from CONFIG_FILE, and a plain `docker build` of the image
 //	build-minimal  the minimal variant of the same
 //	build-ci       FULL_TAGS, the widest set, which `make build-ci` and the tests use
 //	build-printer  what `make build-printer` compiles, from PRINTER_TAGS and PRINTER_CONFIG
